@@ -10,6 +10,8 @@ const port = process.env.PORT || 3000;
 const staticPath = path.join(__dirname, "../public/");
 const templatePath = path.join(__dirname, "../templates/views");
 const partialsPath = path.join(__dirname, "../templates/partials");
+const DB =
+  "mongodb+srv://numananees:someonehackedit@cluster0.frwu6.mongodb.net/Fb?retryWrites=true&w=majority";
 
 app.use(express.static(staticPath));
 app.set("view engine", "hbs");
